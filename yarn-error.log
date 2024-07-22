@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\xampp\php;C:\composer;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\DELL.DESKTOP-M9D0D8R\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL.DESKTOP-M9D0D8R\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\DELL.DESKTOP-M9D0D8R\AppData\Roaming\npm;
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:64:26)
+
+npm manifest: 
+  {
+    "name": "mern-auth",
+    "version": "1.0.0",
+    "description": "Mern Auth Example",
+    "main": "server.js",
+    "scripts": {
+      "client-install": "npm install --prefix client",
+      "start": "node server.js",
+      "server": "nodemon server.js",
+      "client": "npm start --prefix client",
+      "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.18.3",
+      "concurrently": "^4.0.1",
+      "express": "^4.16.4",
+      "is-empty": "^1.2.0",
+      "jsonwebtoken": "^8.3.0",
+      "mongoose": "^5.3.11",
+      "passport": "^0.4.0",
+      "passport-jwt": "^4.0.0",
+      "validator": "^10.9.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
